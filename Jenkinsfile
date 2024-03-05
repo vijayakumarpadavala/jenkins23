@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('git clone') {
             steps {
-              git credentialsId: 'github', url: 'https://github.com/kartikeyapro/ks.git'
+              git credentialsId: 'github', url: 'https://github.com/vijayakumarpadavala/ks.git'
             }
         }
 		stage('Maven version')
