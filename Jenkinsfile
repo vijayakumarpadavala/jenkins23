@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('git clone') {
             steps {
-              git credentialsId: 'github', url: 'https://github.com/vijayakumarpadavala/ks.git'
+              git credentialsId: 'github', url: 'https://github.com/kartikeyapro/ks.git'
             }
         }
 		stage('Maven version')
@@ -32,7 +32,7 @@ pipeline {
 		stage('sonar scan')
 		{
 		  steps {
-		  sh 'mvn sonar:sonar -Dsonar.host.url=http://13.60.31.108:9000 -Dsonar.login=6d90a7cb3fe5201218eba44324531469bdbc8f32'
+		  sh 'mvn sonar:sonar -Dsonar.host.url=http://16.171.194.165:9000 -Dsonar.login=4ddfdaa940d68aa074df55464851d42fb19b609e'
 		  }
 		}
 		
